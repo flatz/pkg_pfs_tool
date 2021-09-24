@@ -138,7 +138,7 @@ uint64_t get_file_size(const char* path) {
 int make_directory(const char* path, int mode) {
 	assert(path != NULL);
 
-#ifdef __linux__
+#if defined(__linux__) || (__APPLE__)
 	return mkdir(path, mode) == 0;
 #else
 	UNUSED(mode);
@@ -647,7 +647,7 @@ error:
 }
 
 int generate_crypto_random(uint8_t* data, size_t data_size) {
-#if defined(__linux__)
+#if defined(__linux__) || defined(__APPLE__)
 	int fd = -1;
 	size_t offset;
 	ssize_t ret;
