@@ -10,7 +10,7 @@
 
 struct file_map* map_files(const char* const* file_paths, size_t file_count) {
 	struct file_map* map = NULL;
-	struct stat64 stat;
+	struct stat64 st;
 	void* data = MAP_FAILED;
 	void* map_base_addr = MAP_FAILED;
 	void* map_addr;
@@ -48,14 +48,14 @@ struct file_map* map_files(const char* const* file_paths, size_t file_count) {
 		map->segments[i].base = MAP_FAILED;
 
 	for (i = 0; i < file_count; ++i) {
-		if (stat64(file_paths[i], &stat) < 0)
+		if (stat64(file_paths[i], &st) < 0)
 			goto error;
-		if (!S_ISREG(stat.st_mode)) {
+		if (!S_ISREG(st.st_mode)) {
 			errno = EINVAL;
 			goto error;
 		}
 
-		file_size = (uint64_t)stat.st_size;
+		file_size = (uint64_t)st.st_size;
 		if (file_size > SIZE_MAX) {
 			errno = EINVAL;
 			goto error;
@@ -87,14 +87,14 @@ struct file_map* map_files(const char* const* file_paths, size_t file_count) {
 		if (fd < 0)
 			goto error;
 
-		if (fstat64(fd, &stat) < 0)
+		if (fstat64(fd, &st) < 0)
 			goto error;
-		if (!S_ISREG(stat.st_mode)) {
+		if (!S_ISREG(st.st_mode)) {
 			errno = EINVAL;
 			goto error;
 		}
 
-		file_size = (uint64_t)stat.st_size;
+		file_size = (uint64_t)st.st_size;
 		if (file_size != map->segments[i].size) {
 			errno = EINVAL;
 			goto error;

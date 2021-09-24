@@ -18,6 +18,13 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+#ifdef __APPLE__
+#define O_LARGEFILE   0
+#define stat64        stat
+#define fstat64       fstat
+#define ftruncate64   ftruncate
+#endif
+
 #ifdef _WIN32
 #	ifndef O_LARGEFILE
 #		define O_LARGEFILE 0
