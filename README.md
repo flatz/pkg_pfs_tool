@@ -7,7 +7,7 @@ Dependencies:
 
 For ubuntu-ish:
 ```bash
-sudo apt install libmbedtls-dev uthash-dev zlib
+sudo apt install libmbedtls-dev uthash-dev zlib1g-dev
 ```
 
 To produce windows executable from ubuntu-ish via mingw:
