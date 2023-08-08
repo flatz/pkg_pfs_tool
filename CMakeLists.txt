@@ -76,11 +76,11 @@ include_directories(${ZLIB_INCLUDE_DIRS})
 list(APPEND LIBS ${ZLIB_LIBRARIES})
 
 find_package(MBEDTLS 2.24.0 REQUIRED)
-include_directories(${MBEDTLS_INCLUDE_DIRS})
+include_directories(${MBEDTLS_INCLUDE_DIR})
 list(APPEND LIBS ${MBEDTLS_LIBRARIES})
 
 find_package(UTHASH REQUIRED)
-include_directories(${UTHASH_INCLUDE_DIRS})
+include_directories(${UTHASH_INCLUDE_DIR})
 
 #
 # Project settings.
