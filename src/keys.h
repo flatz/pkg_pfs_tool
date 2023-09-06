@@ -26,6 +26,12 @@ extern uint8_t* g_ekpfs_obf_key_5;
 extern uint8_t* g_ekpfs_obf_key_6;
 extern uint8_t* g_ekpfs_obf_key_7;
 extern uint8_t* g_ekpfs_obf_key_8;
+extern uint8_t* g_ekpfs_obf_key_9;
+extern uint8_t* g_ekpfs_obf_key_10;
+extern uint8_t* g_ekpfs_obf_key_11;
+extern uint8_t* g_ekpfs_obf_key_12;
+extern uint8_t* g_ekpfs_obf_key_13;
+extern uint8_t* g_ekpfs_obf_key_14;
 
 extern uint8_t* g_gdgp_ekc_key_0;
 extern uint8_t* g_gdgp_ekc_key_1;
