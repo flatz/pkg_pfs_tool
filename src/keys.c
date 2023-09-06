@@ -87,6 +87,12 @@ uint8_t* g_ekpfs_obf_key_5 = NULL;
 uint8_t* g_ekpfs_obf_key_6 = NULL;
 uint8_t* g_ekpfs_obf_key_7 = NULL;
 uint8_t* g_ekpfs_obf_key_8 = NULL;
+uint8_t* g_ekpfs_obf_key_9 = NULL;
+uint8_t* g_ekpfs_obf_key_10 = NULL;
+uint8_t* g_ekpfs_obf_key_11 = NULL;
+uint8_t* g_ekpfs_obf_key_12 = NULL;
+uint8_t* g_ekpfs_obf_key_13 = NULL;
+uint8_t* g_ekpfs_obf_key_14 = NULL;
 
 uint8_t* g_gdgp_ekc_key_0 = NULL;
 uint8_t* g_gdgp_ekc_key_1 = NULL;
