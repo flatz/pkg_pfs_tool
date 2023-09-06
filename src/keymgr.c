@@ -45,6 +45,12 @@ static struct {
 	{ "ekpfs_obf_key_6", &g_ekpfs_obf_key_6, TYPE_BYTE_ARRAY, 16, 1 },
 	{ "ekpfs_obf_key_7", &g_ekpfs_obf_key_7, TYPE_BYTE_ARRAY, 16, 1 },
 	{ "ekpfs_obf_key_8", &g_ekpfs_obf_key_8, TYPE_BYTE_ARRAY, 16, 1 },
+	{ "ekpfs_obf_key_9", &g_ekpfs_obf_key_9, TYPE_BYTE_ARRAY, 16, 1 },
+	{ "ekpfs_obf_key_10", &g_ekpfs_obf_key_10, TYPE_BYTE_ARRAY, 16, 1 },
+	{ "ekpfs_obf_key_11", &g_ekpfs_obf_key_11, TYPE_BYTE_ARRAY, 16, 1 },
+	{ "ekpfs_obf_key_12", &g_ekpfs_obf_key_12, TYPE_BYTE_ARRAY, 16, 1 },
+	{ "ekpfs_obf_key_13", &g_ekpfs_obf_key_13, TYPE_BYTE_ARRAY, 16, 1 },
+	{ "ekpfs_obf_key_14", &g_ekpfs_obf_key_14, TYPE_BYTE_ARRAY, 16, 1 },
 
 	{ "gdgp_ekc_key_0", &g_gdgp_ekc_key_0, TYPE_BYTE_ARRAY, 16, 1 },
 	{ "gdgp_ekc_key_1", &g_gdgp_ekc_key_1, TYPE_BYTE_ARRAY, 16, 1 },
